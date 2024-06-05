@@ -45,8 +45,6 @@ export const sendAccountVerificationEmail = async (
       html: `<p>Clique <a href="${verificationUrl}">aqui</a> para confirmar seu e-mail.</p>`,
     });
 
-    console.log(data, error);
-
     if (error)
       return {
         error,
